@@ -1,0 +1,4 @@
+#!/bin/bash
+
+input=$1
+echo -n "$input" | sha256sum | awk '{print $1}'
